@@ -12,12 +12,21 @@ function toggleMenu() {
     linkContainer.classList.toggle('active');
 };
 
-
 function nextImage(x) {
     const galleryImage = document.querySelector(".gallery-image");
 
-    galleryImage.src=`../images/lanscapes/landscape_${currentImage}.JPG`;
     currentImage += x;
+
+    if (currentImage < 1) {
+        currentImage = 13;
+    }
+    else if (currentImage > 13) {
+        currentImage = 1;
+    }
+
+
+    galleryImage.src=`../images/lanscapes/landscape_${currentImage}.jpg`;
 }
 
-let currentImage = 0;
+let currentImage = 1;
+document.body.style.overflowY = "hidden";

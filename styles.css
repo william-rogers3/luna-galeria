@@ -2,6 +2,7 @@
     border: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     font-weight: 400;
 }
 
@@ -9,8 +10,24 @@ body.active {
     overflow: hidden;
 }
 
+#header-title {
+    text-decoration: none;
+}
+
 a {
     color: black;
+}
+
+.secondary-title {
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.page-paragraph {
+    padding: 0 10px;
+    text-align: center;
+    margin: 10px;
 }
 
 header {
@@ -32,15 +49,15 @@ header {
     transition: translate .75s, opacity 1s;
 }
 
-.links-container > ul {
+.links-container>ul {
     list-style-type: none;
 }
 
-.links-container > ul > li {
+.links-container>ul>li {
     font-size: 36px;
     margin: 12px;
     color: black;
-} 
+}
 
 .links-container.active {
     z-index: 100;
@@ -63,7 +80,7 @@ header {
     width: 50px;
     cursor: pointer;
     gap: 5px;
-    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .bar {
@@ -75,12 +92,12 @@ header {
     transition: all .5s;
 }
 
-.active.bar:nth-child(1){
+.active.bar:nth-child(1) {
     rotate: 225deg;
     translate: 0 3px;
 }
 
-.active.bar:nth-child(2){
+.active.bar:nth-child(2) {
     rotate: -225deg;
     translate: 0 -3px;
 }
@@ -171,4 +188,60 @@ section {
 #final-section {
     height: 250px;
     min-height: 0;
+}
+
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-image-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 52px);
+    height: 400px;
+}
+
+.arrow {
+    height: 26px;
+    width: 26px;
+}
+
+.left {
+    transform: rotate(180deg);
+    margin-left: 20px;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.arrow>img {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-image {
+    width: 311px;
+}
+
+.portraiture-link {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+}
+
+.portraiture-link > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.after-link {
+    height: 40px;
+    width: 40px;
 }

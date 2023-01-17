@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscapes — Galería de Luna></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="./landscape.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h3><a href="../index.html" id="header-title">Galería de Luna</a></h3>
+        <div class="menu" id="hamburger-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <div class="links-container start">
+        <ul>
+            <li class="portfolio"><a href=#>Portfolio</a></li>
+            <li class="about"><a href=#>About</a></li>
+            <li class="contact"><a href=#>Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+        <div class="line"></div>
+
+        <h2 class="secondary-title">Landscape Photography</h2>
+
+        <p class="page-paragraph">Landscape Photography of places that had caught my eye in and out of Cleveland.
+        </p>
+
+
+
+        <div class="slideshow-container">
+            <div class="left arrow" onclick="nextImage(-1)">
+                <img src="../images/right-arrow.png" alt="arrow icon">
+            </div>
+            <div class="gallery-image-holder">
+                <img class="gallery-image" src="../images/lanscapes/landscape_1.jpg" alt="">
+            </div>
+            <div class="right arrow" onclick="nextImage(1)">
+                <img src="../images/right-arrow.png" alt="arrow icon">
+            </div>
+        </div>
+        
+        <div class="portraiture-link">
+            <a href="#">
+                <h3>Portraiture</h3>
+                <img class="after-link" src="../images/right-arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
