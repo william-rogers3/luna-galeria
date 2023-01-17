@@ -1,5 +1,4 @@
 function toggleMenu() {
-    console.log('hi');
     const bars = document.getElementsByClassName("bar");
     const container = document.querySelector('.content-container');
     const linkContainer = document.querySelector('.links-container');
