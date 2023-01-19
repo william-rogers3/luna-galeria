@@ -12,3 +12,21 @@ function toggleMenu() {
     linkContainer.classList.toggle('active');
 };
 
+function nextImage(x) {
+    const galleryImage = document.querySelector(".gallery-image");
+
+    currentImage += x;
+
+    if (currentImage < 1) {
+        currentImage = 12;
+    }
+    else if (currentImage > 12) {
+        currentImage = 1;
+    }
+
+
+    galleryImage.src=`../images/portraits/portrait_${currentImage}.jpg`;
+}
+
+let currentImage = 1;
+document.body.style.overflowY = "hidden";

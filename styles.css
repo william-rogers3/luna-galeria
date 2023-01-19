@@ -228,14 +228,24 @@ section {
     width: 311px;
 }
 
-.portraiture-link {
+.right-link,
+.left-link {
     position: absolute;
-    right: 20px;
     bottom: 20px;
     font-size: 30px;
 }
 
-.portraiture-link > a {
+.right-link {
+    right: 20px;
+}
+
+.left-link {
+    left: 20px;
+    bottom: 100px;
+}
+
+.right-link > a,
+.left-link > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,4 +254,5 @@ section {
 .after-link {
     height: 40px;
     width: 40px;
+    margin: 0;
 }
