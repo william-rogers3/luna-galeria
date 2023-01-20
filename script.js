@@ -12,3 +12,5 @@ function toggleMenu() {
     linkContainer.classList.toggle('active');
 };
 
+const linkContainer = document.querySelector('.links-container');
+linkContainer.style.transition = "opacity .4s, translate .75s";

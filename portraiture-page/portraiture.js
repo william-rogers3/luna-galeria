@@ -29,4 +29,6 @@ function nextImage(x) {
 }
 
 let currentImage = 1;
-document.body.style.overflowY = "hidden";
+
+const linkContainer = document.querySelector('.links-container');
+linkContainer.style.transition = "opacity .4s, translate .75s";
