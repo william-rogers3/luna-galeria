@@ -18,14 +18,14 @@ function nextImage(x) {
     currentImage += x;
 
     if (currentImage < 1) {
-        currentImage = 13;
+        currentImage = 12;
     }
-    else if (currentImage > 13) {
+    else if (currentImage > 12) {
         currentImage = 1;
     }
 
 
-    galleryImage.src=`../images/lanscapes/landscape_${currentImage}.jpg`;
+    galleryImage.src=`../images/film-work/film-work_${currentImage}.jpeg`;
 }
 
 let currentImage = 1;

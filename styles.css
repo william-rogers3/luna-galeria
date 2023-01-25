@@ -240,6 +240,14 @@ section {
     font-size: 30px;
 }
 
+.right-link > a,
+.left-link > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .right-link {
     right: 20px;
 }
@@ -257,7 +265,7 @@ section {
 }
 
 .after-link {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin: 0;
 }

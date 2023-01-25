@@ -18,21 +18,17 @@ function nextImage(x) {
     currentImage += x;
 
     if (currentImage < 1) {
-        currentImage = 7;
+        currentImage = 13;
     }
-    else if (currentImage > 7) {
+    else if (currentImage > 13) {
         currentImage = 1;
     }
 
 
-    galleryImage.src=`../images/commercial-work/commercial-work_${currentImage}.jpeg`;
+    galleryImage.src=`../images/landscapes/landscape_${currentImage}.jpg`;
 }
 
 let currentImage = 1;
 
 const linkContainer = document.querySelector('.links-container');
 linkContainer.style.transition = "opacity .4s, translate .75s";
-
-const slideshowContainer = document.querySelector(".slideshow-container");
-slideshowContainer.style.height = "430px";
-slideshowContainer.style.paddingBottom = "10px";
