@@ -32,7 +32,3 @@ let currentImage = 1;
 
 const linkContainer = document.querySelector('.links-container');
 linkContainer.style.transition = "opacity .4s, translate .75s";
-
-const slideshowContainer = document.querySelector(".slideshow-container");
-slideshowContainer.style.height = "430px";
-slideshowContainer.style.paddingBottom = "10px";

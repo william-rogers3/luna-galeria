@@ -195,6 +195,8 @@ section {
     align-items: center;
     width: 100%;
     height: auto;
+    min-height: 430px;
+    padding-bottom: 10px;
 }
 
 .gallery-image-holder {
@@ -212,11 +214,11 @@ section {
 
 .left {
     transform: rotate(180deg);
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .right {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .arrow > img {
@@ -229,39 +231,29 @@ section {
 }
 
 .bottom-links {
-    position: relative;
-    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
 }
 
 .right-link,
 .left-link {
-    position: absolute;
-    bottom: 50px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .right-link > a,
 .left-link > a {
     text-decoration: none;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.right-link {
-    right: 20px;
-}
-
-.left-link {
-    left: 20px;
-    bottom: 150px;
-}
-
-.right-link > a,
-.left-link > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.right-link > a > h3,
+.left-link > a > h3 {
+    width: 150px;
 }
 
 .after-link {
