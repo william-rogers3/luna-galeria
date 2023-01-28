@@ -5,26 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commercial Work — Galería de Luna></title>
+    <title>Film Work — Galería de Luna></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <script src="./commercial-work.js" defer></script>
-    <style>
-        .right {
-            margin-right: 5px;
-        } 
-
-        .left {
-            margin-left: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts/film-work.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h3><a href="../" id="header-title">Galería de Luna</a></h3>
+        <h3><a href="./" id="header-title">Galería de Luna</a></h3>
         <div class="menu" id="hamburger-menu" onclick="toggleMenu()">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -33,8 +24,8 @@
 
     <div class="links-container start">
         <ul>
-            <li class="portfolio"><a href="../">Portfolio</a></li>
-            <li class="about"><a href=#>About</a></li>
+            <li class="portfolio"><a href="./">Portfolio</a></li>
+            <li class="about"><a href="./about.html">About</a></li>
             <li class="contact"><a href=#>Contact</a></li>
         </ul>
     </div>
@@ -42,38 +33,40 @@
     <div class="content-container">
         <div class="line"></div>
 
-        <h2 class="secondary-title">Commercial Work</h2>
+        <h2 class="secondary-title">Film Work</h2>
 
-        <p class="page-paragraph">Work that I have done for events, brands, and companies.</p>
+        <p class="page-paragraph">Stills from film work that I have either done by myself 
+            or with a crew.
+        </p>
 
 
 
 
         <div class="slideshow-container">
             <div class="left arrow" onclick="nextImage(-1)">
-                <img src="../images/right-arrow.png" alt="arrow icon">
+                <img src="./images/right-arrow.png" alt="arrow icon">
             </div>
             <div class="gallery-image-holder">
-                <img class="gallery-image" src="../images/commercial-work/commercial-work_1.jpeg" alt="">
+                <img class="gallery-image" src="./images/film-work/film-work_1.jpeg" alt="">
             </div>
             <div class="right arrow" onclick="nextImage(1)">
-                <img src="../images/right-arrow.png" alt="arrow icon">
+                <img src="./images/right-arrow.png" alt="arrow icon">
             </div>
         </div>
 
         <div class="bottom-links">
 
             <div class="left-link">
-                <a href="../portraiture-page/portraiture.html">
-                    <img class="after-link left" src="../images/right-arrow.png" alt="">
-                    <h3>Portraiture</h3>
+                <a href="./portraiture.html">
+                    <img class="after-link left" src="./images/right-arrow.png" alt="">
+                    <h3>Commercial Work</h3>
                 </a>
             </div>
 
             <div class="right-link">
-                <a href="../film-work-page/film-work.html">
-                    <h3>Film Work</h3>
-                    <img class="after-link" src="../images/right-arrow.png" alt="">
+                <a href="./landscape.html">
+                    <h3>Landscapes</h3>
+                    <img class="after-link" src="./images/right-arrow.png" alt="">
                 </a>
             </div>
 
