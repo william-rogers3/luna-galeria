@@ -25,7 +25,7 @@ function nextImage(x) {
     }
 
 
-    galleryImage.src=`../images/landscapes/landscape_${currentImage}.jpg`;
+    galleryImage.src=`./images/landscapes/landscape_${currentImage}.jpg`;
 }
 
 let currentImage = 1;

@@ -25,7 +25,7 @@ function nextImage(x) {
     }
 
 
-    galleryImage.src=`../images/portraits/portrait_${currentImage}.jpg`;
+    galleryImage.src=`./images/portraits/portrait_${currentImage}.jpg`;
 }
 
 let currentImage = 1;

@@ -25,7 +25,7 @@ function nextImage(x) {
     }
 
 
-    galleryImage.src=`../images/film-work/film-work_${currentImage}.jpeg`;
+    galleryImage.src=`./images/film-work/film-work_${currentImage}.jpeg`;
 }
 
 let currentImage = 1;

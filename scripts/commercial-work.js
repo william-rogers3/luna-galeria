@@ -25,7 +25,7 @@ function nextImage(x) {
     }
 
 
-    galleryImage.src=`../images/commercial-work/commercial-work_${currentImage}.jpeg`;
+    galleryImage.src=`./images/commercial-work/commercial-work_${currentImage}.jpeg`;
 }
 
 let currentImage = 1;
