@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Luna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h3><a href="./" id="header-title">Galería de Luna</a></h3>
+        <div class="menu" id="hamburger-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <div class="links-container start">
+        <ul>
+            <li class="portfolio"><a href="./">Portfolio</a></li>
+            <li class="about"><a href="about.html">About</a></li>
+            <li class="contact"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+        <div class="line"></div>
+
+        <form action="https://formsubmit.co/wrrogers3@gmail.com" method="POST">
+            <div class="input">
+                <label for="name last-name">Name<span class="required">*</span></label>
+                <div class="inner-input">
+                    <input type="text" name="name" placeholder="First Name" required>
+                    <input type="text" name="name" placeholder="Last Name" required>
+                </div>
+
+            </div>
+            <div class="input">
+                <label for="email">Email<span class="required">*</span></label>
+                <div class="inner-input">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="input">
+                <label for="cars">Choose a Service:</label>
+                <div class="inner-input">
+                    <select name="service-type" id="service-type">
+                        <option value="photoshoot">Photoshoot</option>
+                        <option value="videoshoot">Videoshoot</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="input">
+                <label for="when/where"> Where and when will the shoot/event take place?<span
+                        class="required">*</span></label>
+                <input type="text" id="when-where" name="name"
+                    placeholder="Ex: 02/10/2023 @ 2:00pm at Playhouse Square." required>
+            </div>
+            <div class="input">
+                <label for="description">Please describe your project.<span class="required">*</span></label>
+                <textarea
+                    placeholder="Is it a personal, commercial, or event shoot necessary? Please be as descriptive as possible."></textarea>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Thank you for emailing me! I will get back to you ASAP.">
+            <button type="submit" id="submit-form">Submit Inquiry</button>
+        </form>
+    </div>
+</body>
+
+</html>

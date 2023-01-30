@@ -6,6 +6,10 @@
     font-weight: 400;
 }
 
+body {
+    touch-action: manipulation;
+}
+
 body.active {
     overflow: hidden;
 }
@@ -208,8 +212,9 @@ section {
 }
 
 .arrow {
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 16px;
+    cursor: pointer;
 }
 
 .left {
@@ -221,7 +226,7 @@ section {
     margin-right: 10px;
 }
 
-.arrow > img {
+.arrow>img {
     height: 100%;
     width: 100%;
 }
@@ -242,8 +247,8 @@ section {
     font-size: 20px;
 }
 
-.right-link > a,
-.left-link > a {
+.right-link>a,
+.left-link>a {
     text-decoration: none;
     text-align: center;
     display: flex;
@@ -251,14 +256,14 @@ section {
     align-items: center;
 }
 
-.right-link > a > h3,
-.left-link > a > h3 {
+.right-link>a>h3,
+.left-link>a>h3 {
     width: 150px;
 }
 
 .after-link {
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 24px;
     margin: 0;
 }
 
@@ -278,4 +283,74 @@ section {
 .about-second-para {
     font-size: 20px;
     width: 70vw;
+}
+
+label {
+    display: inline-block;
+    max-width: 80vw;
+}
+
+.input {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    position: relative;
+    left: 16px;
+    margin: 20px 0;
+}
+
+.inner-input {
+    /* display: flex;
+    justify-content: center; */
+    gap: 10px;
+}
+
+input,
+textarea {
+    position: relative;
+    /* left: 16px; */
+    width: 40vw;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+#service-type {
+    border-radius: 2px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+textarea,
+#when-where {
+    width: 82vw;
+}
+
+textarea {
+    min-height: 60px;
+}
+
+.required {
+    margin: 0 2px;
+}
+
+#submit-form {
+    position: relative;
+    width: 180px;
+    height: 70px;
+    border-radius: 2px;
+    background-color: #fafafa;
+    border: 1px solid black;
+    left: 16px;
+    transition: all .25s;
+    font-weight: 500;
+}
+
+#submit-form:hover {
+    border: 1px solid #ccc;
+    background-color: black;
+    cursor: pointer;
+    color: white;
 }
