@@ -127,6 +127,7 @@ section {
 .image-holder {
     height: 528px;
     width: 352px;
+    display: flex;
 }
 
 .haze {
@@ -155,6 +156,7 @@ section {
     width: 352px;
     position: absolute;
     background-size: cover;
+    object-fit: cover;
 }
 
 .image-holder-text {
@@ -166,21 +168,8 @@ section {
     opacity: 0;
 }
 
-.landscapes {
-    background-image: url("./images/landscapes.jpg");
-}
-
-.portraiture {
-    background-image: url("./images/portraiture.jpeg");
-}
-
-.commercial {
-    background-image: url("./images/commercial-work.jpeg");
-}
-
 .film-work {
-    background-image: url("./images/film-image.jpeg");
-    background-position-x: 35%;
+    object-position: -25vw;
 }
 
 .ending-paragraph {
@@ -353,4 +342,23 @@ textarea {
     background-color: black;
     cursor: pointer;
     color: white;
+}
+
+
+@media (min-width: 1200px) {
+    .subject-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .photo,
+    .haze,
+    .image-holder {
+        width: 45vw;
+        height: 100vh;
+    }
+
 }
