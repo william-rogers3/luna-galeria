@@ -66,7 +66,7 @@ header {
 .links-container.active {
     z-index: 100;
     opacity: 1;
-    translate: 0 100px;
+    translate: 0 140px;
 }
 
 .line {
@@ -173,8 +173,7 @@ section {
 }
 
 .ending-paragraph {
-    /* font-size: 26px; */
-    font-size: 4vh;
+    font-size: 2vmax;
     padding: 0 10px;
     margin: 0 10px;
 }
@@ -330,7 +329,8 @@ textarea {
     height: 70px;
     border-radius: 2px;
     background-color: #fafafa;
-    border: 1px solid black;
+    color: #ccc;;
+    border: 1px solid #ccc;;
     left: 16px;
     transition: all .25s;
     font-weight: 500;
@@ -349,6 +349,13 @@ textarea {
     body {
         overflow-x: hidden;
     }
+
+    header {
+        justify-content: flex-start;
+        height: 8vh;
+        gap: 2vmin;
+    }
+
     .subject-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -356,6 +363,41 @@ textarea {
         align-items: center;
         justify-items: center;
         margin: 1vh;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    .links-container {
+        justify-content: flex-start;
+        align-items: center;
+        position: static;
+        translate: none;
+        opacity: 1;
+        z-index: inherit;
+        flex-direction: row;
+        width: 700px;
+    }
+    
+    .links-container > ul {
+        display: flex;
+        align-items: center;
+        gap: 1.5vmin;
+        padding: 0;
+    }
+
+    .links-container > ul > li,
+    .links-container > ul > li > a,
+    #header-title {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-title,
+    .links-container > ul > li > a{
+        text-decoration: none;
+        font-size: 2vmin;
     }
 
     .photo,
@@ -387,10 +429,14 @@ textarea {
     .right {
         margin-right: 30px;
     }
-    
+
     .arrow {
         height: 60px;
         width: 48px;
+    }
+
+    .ending-paragraph {
+        font-size: 2vmin;
     }
 
 }
