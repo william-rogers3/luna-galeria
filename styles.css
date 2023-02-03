@@ -261,21 +261,38 @@ section {
 }
 
 .about-text-container {
+    margin-top: 20px;
     padding-top: 40px;
-    background-image: url('./images/self-portrait.jpeg');
     background-size: cover;
-    height: 90vh;
-    color: beige;
+    min-height: 90vh;
+}
+
+.portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#self-portrait {
+    border-radius: 26vmax;
+    height: 33vmax;
+    width: 54vmin;
+    object-fit: cover;
+    object-position: center;
+    background-size: 50px;
 }
 
 .about-first-para {
-    font-size: 28px;
+    margin: 10px 0;
+    font-size: 2vmax;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .about-second-para {
-    font-size: 20px;
-    width: 70vw;
+    font-size: 1.7vmax;
+    text-align: center;
 }
 
 label {
@@ -329,8 +346,10 @@ textarea {
     height: 70px;
     border-radius: 2px;
     background-color: #fafafa;
-    color: #ccc;;
-    border: 1px solid #ccc;;
+    color: #ccc;
+    ;
+    border: 1px solid #ccc;
+    ;
     left: 16px;
     transition: all .25s;
     font-weight: 500;
@@ -379,23 +398,23 @@ textarea {
         flex-direction: row;
         width: 700px;
     }
-    
-    .links-container > ul {
+
+    .links-container>ul {
         display: flex;
         align-items: center;
         gap: 1.5vmin;
         padding: 0;
     }
 
-    .links-container > ul > li,
-    .links-container > ul > li > a,
+    .links-container>ul>li,
+    .links-container>ul>li>a,
     #header-title {
         display: flex;
         align-items: center;
     }
 
     #header-title,
-    .links-container > ul > li > a{
+    .links-container>ul>li>a {
         text-decoration: none;
         font-size: 2vmin;
     }
@@ -437,6 +456,18 @@ textarea {
 
     .ending-paragraph {
         font-size: 2vmin;
+    }
+
+    .about-text-container {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    .about-text-container>p {
+        width: 50vw;
+        text-align: center;
     }
 
 }
