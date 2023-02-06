@@ -192,12 +192,27 @@ section {
     padding-bottom: 10px;
 }
 
+.slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vh;
+}
+
 .gallery-image-holder {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: calc(100vw - 52px);
     height: 400px;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.gallery-image-holder.active {
+    opacity: 1;
+    z-index: 1;
 }
 
 .arrow {
@@ -439,6 +454,10 @@ textarea {
 
     .slideshow-container {
         justify-content: space-between;
+    }
+
+    .slides {
+        height: 80vh;
     }
 
     .left {

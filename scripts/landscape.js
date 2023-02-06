@@ -13,22 +13,28 @@ function toggleMenu() {
 };
 
 function nextImage(x) {
-    const galleryImage = document.querySelector(".gallery-image");
+    const galleryImage = document.getElementsByClassName('gallery-image-holder');
+
+    for (let i = 0; i < galleryImage.length; i++) {
+        galleryImage[i].classList.remove('active');
+    }
 
     currentImage += x;
 
-    if (currentImage < 1) {
-        currentImage = 13;
+    if (currentImage < 0) {
+        currentImage = 12;
     }
-    else if (currentImage > 13) {
-        currentImage = 1;
+    else if (currentImage > 12) {
+        currentImage = 0;
     }
-
-
-    galleryImage.src=`./images/landscapes/landscape_${currentImage}.jpg`;
+    galleryImage[currentImage].classList.add('active');
 }
 
-let currentImage = 1;
+
+
+
+let currentImage = 0;
 
 const linkContainer = document.querySelector('.links-container');
 linkContainer.style.transition = "opacity .4s, translate .75s";
+nextImage(0);

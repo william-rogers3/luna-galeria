@@ -13,22 +13,25 @@ function toggleMenu() {
 };
 
 function nextImage(x) {
-    const galleryImage = document.querySelector(".gallery-image");
+    const galleryImage = document.getElementsByClassName('gallery-image-holder');
+
+    for (let i = 0; i < galleryImage.length; i++) {
+        galleryImage[i].classList.remove('active');
+    }
 
     currentImage += x;
 
-    if (currentImage < 1) {
-        currentImage = 12;
+    if (currentImage < 0) {
+        currentImage = 11;
     }
-    else if (currentImage > 12) {
-        currentImage = 1;
+    else if (currentImage > 11) {
+        currentImage = 0;
     }
-
-
-    galleryImage.src=`./images/film-work/film-work_${currentImage}.jpeg`;
+    galleryImage[currentImage].classList.add('active');
 }
 
-let currentImage = 1;
+let currentImage = 0;
 
 const linkContainer = document.querySelector('.links-container');
 linkContainer.style.transition = "opacity .4s, translate .75s";
+nextImage(0);
