@@ -207,7 +207,7 @@ section {
     width: calc(100vw - 52px);
     height: 400px;
     opacity: 0;
-    transition: all .4s ease-in-out;
+    transition: all .35s ease-in-out;
 }
 
 .gallery-image-holder.active {
@@ -276,10 +276,8 @@ section {
 }
 
 .about-text-container {
-    margin-top: 20px;
-    padding-top: 40px;
+    padding-top: 4vmin;
     background-size: cover;
-    min-height: 90vh;
 }
 
 .portrait {
@@ -290,12 +288,16 @@ section {
 }
 
 #self-portrait {
-    border-radius: 26vmax;
+    border-radius: 50%;
     height: 33vmax;
     width: 54vmin;
     object-fit: cover;
     object-position: center;
     background-size: 50px;
+}
+
+#about-name {
+    font-size: 5vmin;
 }
 
 .about-first-para {
@@ -450,6 +452,7 @@ textarea {
     .gallery-image-holder {
         height: 80vh;
         width: auto;
+        max-width: 80vw;
     }
 
     .slideshow-container {
@@ -480,13 +483,26 @@ textarea {
     .about-text-container {
         background-position: center;
         display: flex;
+        /* padding-top: 0; */
+    }
+
+    .portrait {
+        width: 50vw;
+    }
+
+    .about-paragraphs {
+        width: 50vw;
+        font-size: 1.6vmax;
+        display: flex;
         flex-direction: column;
-        width: 50vw;
-    }
-
-    .about-text-container>p {
-        width: 50vw;
+        align-items: center;
         text-align: center;
+        justify-content: center;
+        padding-right: 10vw;
     }
 
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
 }
