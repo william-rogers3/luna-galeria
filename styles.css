@@ -25,7 +25,6 @@ a {
 .secondary-title {
     margin-top: 20px;
     font-size: 32px;
-    text-align: center;
 }
 
 .page-paragraph {
@@ -288,28 +287,34 @@ section {
 }
 
 #self-portrait {
-    border-radius: 50%;
-    height: 33vmax;
-    width: 54vmin;
+    /* border-radius: 50%; */
+    /* height: 33vmax; */
+    /* width: 54vmin; */
+    height: 42vmax;
+    width: 42vmax;
     object-fit: cover;
     object-position: center;
-    background-size: 50px;
 }
 
 #about-name {
     font-size: 5vmin;
 }
 
+.about-paragraphs {
+    /* position: relative; */
+    margin-top: 20px;
+    /* left: 1vmax; */
+    width: 42vmax;
+}
+
 .about-first-para {
     margin: 10px 0;
-    font-size: 2vmax;
+    /* font-size: 2vmax; */
     padding-bottom: 20px;
-    text-align: center;
 }
 
 .about-second-para {
-    font-size: 1.7vmax;
-    text-align: center;
+    /* font-size: 1.7vmax; */
 }
 
 label {
@@ -483,22 +488,25 @@ textarea {
     .about-text-container {
         background-position: center;
         display: flex;
-        /* padding-top: 0; */
+        gap: 5vw;
     }
 
     .portrait {
-        width: 50vw;
+        width: 40vw;
     }
 
     .about-paragraphs {
-        width: 50vw;
-        font-size: 1.6vmax;
+        width: 40vw;
+        /* font-size: 1.6vmax; */
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-right: 10vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+
+    #about-name {
+        align-self: flex-start;
     }
 
     .input {
