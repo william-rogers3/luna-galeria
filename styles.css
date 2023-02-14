@@ -23,6 +23,7 @@ a {
 }
 
 .secondary-title {
+    text-align: center;
     margin-top: 20px;
     font-size: 32px;
 }
@@ -287,9 +288,6 @@ section {
 }
 
 #self-portrait {
-    /* border-radius: 50%; */
-    /* height: 33vmax; */
-    /* width: 54vmin; */
     height: 42vmax;
     width: 42vmax;
     object-fit: cover;
@@ -301,20 +299,14 @@ section {
 }
 
 .about-paragraphs {
-    /* position: relative; */
     margin-top: 20px;
-    /* left: 1vmax; */
     width: 42vmax;
+    font-size: 1.8vmin;
 }
 
 .about-first-para {
-    margin: 10px 0;
-    /* font-size: 2vmax; */
-    padding-bottom: 20px;
-}
-
-.about-second-para {
-    /* font-size: 1.7vmax; */
+    margin: 1.1vmin 0;
+    padding-bottom: 2.1vmin;
 }
 
 label {
@@ -497,12 +489,8 @@ textarea {
 
     .about-paragraphs {
         width: 40vw;
-        /* font-size: 1.6vmax; */
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
-        /* text-align: center; */
-        /* justify-content: center; */
     }
 
     #about-name {
